@@ -1,7 +1,7 @@
 import { readJson } from 'fs-extra/esm';
-import svgtofont from 'svgtofont';
 import getArgumentOptions from 'minimist';
 import path from 'path';
+import svgtofont from 'svgtofont';
 
 const fontName = 'lucide';
 const classNamePrefix = 'icon';
@@ -97,6 +97,7 @@ async function init() {
       css: {
         fontSize: 'inherit',
       },
+      addLigatures: true,
       emptyDist: true,
       useCSSVars: false,
       outSVGReact: false,
